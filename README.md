@@ -41,7 +41,7 @@ TOTP: B4DE50FC4428E12A6211A64C59244FE168B7FF0BD800056DD353EF9CEA6E59A9 (valid fo
 TOTP: EE7A8C7603AE9E38DD9FA38E8BBE75F8735B2417159C55D338621C9A66C95ED7 (valid for   35s)
 ```
 
-## HMAC-based OTP
+## Counter-based OTP
 The hotp example will use an external counter value to manipulate the MT seed. \
 Currently any resyncing and validation window handling is not part of this code.
 ```
