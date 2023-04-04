@@ -1,3 +1,4 @@
+/* snprintf() */
 #define _XOPEN_SOURCE (700)
 
 #include <stdio.h>
@@ -87,6 +88,7 @@ int main(int argc, char *argv[])
 
 	init_totp();
 
+	/* Process Command Line Arguments */
 	if(argc < 3) {
 		fprintf(stderr, "%s: <SECRET FILE> <SPIN VALUE>\n", argv[0]);
 		exit(1);
