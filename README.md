@@ -59,6 +59,6 @@ This code was not designed to be compliant with any RFC or specification. It was
 Currently the output is 32 bytes of binary data (represented as 64 hex digits). This can be manipulated higher or lower by changing OUTPUT_ULONGS in main.c
 
 ## More Info
-[Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister)
-[TOTP](https://en.wikipedia.org/wiki/Time-based_one-time_password)
-[HOTP](https://en.wikipedia.org/wiki/HMAC-based_one-time_password)
+* [Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister)
+* [TOTP](https://en.wikipedia.org/wiki/Time-based_one-time_password)
+* [HOTP](https://en.wikipedia.org/wiki/HMAC-based_one-time_password)
