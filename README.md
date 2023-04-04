@@ -30,7 +30,7 @@ Set the spin value to any unsigned integer.
 ```
 
 ## Time-based OTP
-The totp example will take the current time and feed it into the MT seed.
+The totp example will use the current time to manipulate the MT seed.
 ```
 ./totp.exe: <SECRET FILE> <SPIN VALUE>
 
@@ -42,7 +42,7 @@ TOTP: EE7A8C7603AE9E38DD9FA38E8BBE75F8735B2417159C55D338621C9A66C95ED7 (valid fo
 ```
 
 ## HMAC-based OTP
-The hotp example will take an external counter value and feed it into the MT seed. \
+The hotp example will use an external counter value to manipulate the MT seed. \
 Currently any resyncing and validation window handling is not part of this code.
 ```
 ./hotp.exe: <SECRET FILE> <SPIN VALUE>
@@ -56,7 +56,7 @@ HOTP: 43E55DFDFF921E45EC494A18CECB7201B550E0818882D0200AFEE950C6D58975
 
 ## Design Decisions
 This code was not designed to be compliant with any RFC or specification. It was strictly designed to generate OTP codes for use in an external authentication system.
-Currently the output is 32 bytes of binary data (represented as 64 hex digits). This can be manipulated higher or lower by changing OUTPUT_ULONGS in main.c
+Currently the output is 32 bytes of binary data (represented as 64 hex digits). This can be adjusted higher or lower by changing OUTPUT_ULONGS in main.c
 
 ## More Info
 * [Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister)
