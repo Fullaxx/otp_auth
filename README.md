@@ -19,7 +19,7 @@ This file will seed the MT PRNG.
 
 ## Static Key
 Run the MT64 to generate a static key based only on the secret keyfile. \
-This is just used to show the usage of the MT64 algorithm. \
+This is just used to demonstrate the usage of the MT64 algorithm. \
 This will not produce a "One-Time" value. The input will not be manipulated. \
 It will reproduce consistent output from the same input. \
 Set the spin value to any unsigned integer.
